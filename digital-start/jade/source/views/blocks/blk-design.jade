@@ -1,0 +1,103 @@
+.blk-content#blk-design
+    .container
+        .blk-title
+            h2.lrg-ttl ETAPE II
+            h3.sml-ttl WEBDESIGN
+            .desc Choisissez le style graphique de votre site de la page d’acceuil, qui donne le «LA», à l’ensemble de vos pages.
+        // END : BLK TITLE
+        form(name="frm-design")
+            .design-wrap
+                .design-tab.blk-pagination
+                    ul.nav.nav-tabs
+                        li.active 
+                            a(href="#home", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt HOME PAGE
+                        li
+                            a(href="#propos", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt À PROPOS
+                        li
+                            a(href="#prestations", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt PRESTATIONS
+                        li
+                            a(href="#gallerie", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt GALERIE
+                        li
+                            a(href="#blog", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt BLOG
+                        li
+                            a(href="#contact", aria-controls="home", role="tab", data-toggle="tab") 
+                                span.cir
+                                span.txt CONTACT
+                // END: TAB
+                .design-content.tab-content
+                    .tab-pane.active(id="home", role="tabpanel")
+                        ul.design-list.clearfix
+                            li.design-item
+                                a(href="#")
+                                    .ttl-wrap.clearfix
+                                        h3.ttl CORPORATE
+                                        input(type="checkbox", name="design-1", class="ipt-checkbox", checked)
+                                    // END : TTL
+                                    .design-img
+                                        img(src="uploads/prods/web-1.jpg", alt="")
+                                    // END : IMG
+                            // END : ITEM
+                            li.design-item
+                                a(href="#")
+                                    .ttl-wrap.clearfix
+                                        h3.ttl SHOP
+                                        input(type="checkbox", name="design-2", class="ipt-checkbox")
+                                    // END : TTL
+                                    .design-img
+                                        img(src="uploads/prods/web-2.jpg", alt="")
+                                    // END : IMG
+                            // END : ITEM
+                            li.design-item
+                                a(href="#")
+                                    .ttl-wrap.clearfix
+                                        h3.ttl PORTFOLIO
+                                        input(type="checkbox", name="design-3", class="ipt-checkbox")
+                                    // END : TTL
+                                    .design-img
+                                        img(src="uploads/prods/web-1.jpg", alt="")
+                                    // END : IMG
+                            // END : ITEM
+                            li.design-item
+                                a(href="#")
+                                    .ttl-wrap.clearfix
+                                        h3.ttl BLABLA
+                                        input(type="checkbox", name="design-4", class="ipt-checkbox")
+                                    // END : TTL
+                                    .design-img
+                                        img(src="uploads/prods/web-2.jpg", alt="")
+                                    // END : IMG
+                            // END : ITEM
+                            li.design-item
+                                a(href="#")
+                                    .ttl-wrap.clearfix
+                                        h3.ttl KIKOULOL
+                                        input(type="checkbox", name="design-5", class="ipt-checkbox")
+                                    // END : TTL
+                                    .design-img
+                                        img(src="uploads/prods/web-1.jpg", alt="")
+                                    // END : IMG
+                            // END : ITEM
+                // END : CONTENT
+            // END : WRAP
+            .profile-btn
+                .row
+                    .col-xs-6.text-left
+                        a(href="#")
+                            span.ico <
+                            span.txt RETOUR
+                    // END : COL
+                    .col-xs-6.text-right
+                        a(href="#")
+                            span.txt ÉTAPE VALIDÉE
+                    // END : COL
+            // END : BUTTON

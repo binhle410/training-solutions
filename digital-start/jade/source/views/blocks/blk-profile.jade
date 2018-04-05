@@ -1,0 +1,159 @@
+.blk-content#blk-profile
+    .container
+        .blk-title
+            h2.lrg-ttl ETAPE I
+            h3.sml-ttl PROFIL
+            .desc Commençons par le commencement et dîtes-nous en plus sur vous : 
+        // END : BLK TITLE
+        .profile-wrap
+            form(name="frm-profile")
+                .row
+                    .col-md-6.col-sm-6.col-xs-12.col-left
+                        .blk-profil
+                            h3.profil-ttl la Nature du projet
+                            .row
+                                .col-md-6.col-sm-6.col-xs-6.col-profil.no-float
+                                    span.txt Site vitrine
+                                    input(type="radio", name="site", value="Site vitrine", class="ipt-checkbox", checked)
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Site E-commerce
+                                    input(type="radio", name="site", value="Site E-commerce", class="ipt-checkbox")
+                                // END :COL
+                        // END : BLK
+                        .blk-profil
+                            h3.profil-ttl votre Activité
+                            .row
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Agroalimentaire
+                                    input(type="radio", name="votre", value="agroalimentaire", class="ipt-checkbox", checked)
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Banque / Assurance
+                                    input(type="radio", name="votre", value="banque_assurance", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt BTP / Industrie
+                                    input(type="radio", name="votre", value="btp_industrie", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Commerce / Artisanat
+                                    input(type="radio", name="votre", value="commerce_artisanat", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Études / Conseils
+                                    input(type="radio", name="votre", value="etudes_conseils", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Informatique / Télécoms
+                                    input(type="radio", name="votre", value="informatique_telecom", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Médical / Pharmaceutique
+                                    input(type="radio", name="votre", value="medical_pharma", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Services aus entreprises
+                                    input(type="radio", name="votre", value="services", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    span.txt Transports / Logistique
+                                    input(type="radio", name="votre", value="transports_logistique", class="ipt-checkbox")
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil.no-float
+                                    span.txt Autre : 
+                                    input(type="text", name="autre", class="ipt")
+                                // END :COL
+                        // END : BLK
+                        .blk-profil.mid
+                            h3.profil-ttl vos Produits / Gammes
+                                span (En quelque mots) 
+                            textarea.txtarea
+                        // END : BLK
+                    // END :COL
+                    .col-md-6.col-sm-6.col-xs-12.col-right
+                        .blk-profil
+                            h3.profil-ttl vos clients
+                            .row
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty Sexe :
+                                            | Femme
+                                        input(type="radio", name="Sexe", value="femme", class="ipt-checkbox", checked)
+                                    // END : ITM
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty &nbsp;
+                                            | Homme
+                                        input(type="radio", name="Sexe", value="homme", class="ipt-checkbox")
+                                    // END : ITM
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty &nbsp;
+                                            | Les deux
+                                        input(type="radio", name="Sexe", value="les_deux", class="ipt-checkbox")
+                                    // END : ITM
+                                // END :COL
+                                .col-md-6.col-sm-6.col-xs-6.col-profil
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty Âge :
+                                            | 15/25ans
+                                        input(type="radio",name="age",  value="15/25ans", checked, class="ipt-checkbox")
+                                    // END : ITM
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty &nbsp;
+                                            | 25/35ans
+                                        input(type="radio",name="age",  value="25/35ans", class="ipt-checkbox")
+                                    // END : ITM
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty &nbsp;
+                                            | 35/45ans
+                                        input(type="radio",name="age",  value="35/45ans", class="ipt-checkbox")
+                                    // END :ITM
+                                    .blk-profil
+                                        span.txt 
+                                            span.empty &nbsp;
+                                            | + de 45ans
+                                        input(type="radio",name="age",  value="de_45ans", class="ipt-checkbox")
+                                    // END :ITM
+                                // END :COL
+                        // END : BLK
+                        .blk-profil
+                            h3.profil-ttl Zone géographique
+                            .row
+                                .col-md-4.col-sm-4.col-xs-6.col-profil
+                                    span.txt Régional
+                                    input(type="checkbox", name="regional", class="ipt-checkbox", checked)
+                                // END :COL
+                                .col-md-4.col-sm-4.col-xs-6.col-profil
+                                    span.txt National
+                                    input(type="checkbox", name="national", checked, class="ipt-checkbox")
+                                // END :COL
+                                .col-md-4.col-sm-4.col-xs-6.col-profil
+                                    span.txt International
+                                    input(type="checkbox", name="international", checked, class="ipt-checkbox")
+                                // END :COL
+                        // END : BLK
+                        .blk-profil.mid
+                            h3.profil-ttl vos concurrents
+                                span (3 liens url) 
+                            textarea.txtarea
+                        // END : BLK
+                    // END :COL
+                .profile-btn
+                    .row
+                        .col-xs-6.text-left
+                            button.btn.btn-green
+                                span.ico <
+                                span.txt RETOUR
+                        // END : COL
+                        .col-xs-6.text-right
+                            button.btn.btn-green
+                                span.txt ÉTAPE VALIDÉE
+                        // END : COL
+                // END :COL
+            // END : PROFILE

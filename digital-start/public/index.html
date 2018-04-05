@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Digital Strat</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <style>
+        .down-col .fileUpload .fileToUpload {
+            cursor: pointer;
+        }
+
+        .progress {
+            cursor: pointer;
+        }
+
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .alert {
+            margin-top: 1rem;
+            font-weight: bold;
+            text-align: center;
+
+            position: relative;
+            padding: .75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        .blk-content {
+            margin-bottom: 50px;
+        }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            cursor: pointer;
+        }
+
+        .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+            cursor: default;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        label.error {
+            display: block;
+        }
+
+        .error {
+            color: darkred;;
+        }
+
+        .validation-book button.processing {
+            font-size: 33px;
+        }
+
+        .validation-book button:disabled, button:disabled {
+            background: #dddd;
+        }
+
+        .validation-book button {
+            border: none;
+            padding: 0px;
+            font-style: italic;
+            display: inline-block;
+            width: 320px;
+            height: 80px;
+            color: #fff;
+            margin: 0 auto;
+            font-size: 42px;
+            font-family: 'Stroke', Arial, sans-serif;
+            background-color: #374d27;
+            line-height: 84px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body class="body-css ">
+<header class="header-wrap">
+    <section class="header-logo">
+        <div class="container">
+            <h1 class="logo"><a href="#" title="Digital Strat"><img src="uploads/logo.png" alt="Digital Strat"></a></h1>
+        </div>
+    </section>
+    <!-- END : HEADER MENU-->
+    <div class="blk-banner">
+        <div class="banner-img"><img src="uploads/home_banner.jpg" alt=""></div>
+        <div class="banner-content">
+            <div class="banner-logo"><a href="#"><img src="uploads/logo_slider.png" alt=""></a></div>
+            <div class="desc"><span>EN 5 ÉTAPES SANS BLABLA ET SANS CHICHIS </span><span>VOUS IMAGINEZ VOTRE SITE ET NOUS LE CRÉONS !</span>
+            </div>
+        </div>
+        <a href="javascript:;" class="scroll-down"><span></span></a>
+    </div>
+    <!-- END : BANNER-->
+</header>
+<!-- END : HEADER -->
+<section class="main">
+    <div class="blk-pagination blk-page"><a href="javascript:;" class="a_system"><img
+            src="uploads/ico-system.png"
+            alt=""></a>
+        <div class="container">
+            <ul class="pagi-wrap clearfix">
+                <li data-step="1" class="active"><a href="#"> <span class="cir"></span><span class="txt">ETAPE I</span></a>
+                </li>
+                <li data-step="2"><a href="#"> <span class="cir"></span><span class="txt">ETAPE II </span></a></li>
+                <li data-step="3"><a href="#"> <span class="cir"></span><span class="txt">ETAPE III</span></a></li>
+                <li data-step="4"><a href="#"> <span class="cir"></span><span class="txt">ETAPE IV</span></a></li>
+                <li data-step="5"><a href="#"> <span class="cir"></span><span class="txt">ETAPE V</span></a></li>
+                <li data-step="6"><a href="#"> <span class="cir"></span><span class="txt">ETAPE VI</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END : BLK PAGINATION-->
+
+    <form method="post" action="processor.php">
+        <div data-step="1" id="blk-profile" class="blk-content">
+            <div class="container">
+                <div class="blk-title">
+                    <h2 class="lrg-ttl">ETAPE I</h2>
+                    <h3 class="sml-ttl">PROFIL</h3>
+                    <div class="desc">Commençons par le commencement et dîtes-nous en plus sur vous :</div>
+                </div>
+                <!-- END : BLK TITLE-->
+                <div class="profile-wrap">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-left">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">la Nature du projet</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span
+                                            class="txt">Site vitrine</span>
+                                        <input type="radio" name="data[step-1][nature][choice]" value="vitrine"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span
+                                            class="txt">Site E-commerce</span>
+                                        <input type="radio" name="data[step-1][nature][choice]" value="e-commerce"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">Votre Activité</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span
+                                            class="txt">Agroalimentaire</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="agroalimentaire"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Banque / Assurance</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="banque_assurance"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span
+                                            class="txt">BTP / Industrie</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="btp_industrie"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Commerce / Artisanat</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="commerce_artisanat"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Études / Conseils</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="etudes_conseils"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Informatique / Télécoms</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="informatique_telecom"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Médical / Pharmaceutique</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="medical_pharma"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Services aus entreprises</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="services"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil"><span class="txt">Transports / Logistique</span>
+                                        <input type="radio" name="data[step-1][activite][choice]" value="transports_logistique"
+                                               class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil no-float"><span class="txt">Autre : </span>
+                                        <input type="text" name="data[step-1][activite][autres]" value="" class="ipt">
+                                    </div>
+                                    <!-- END :COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil mid block">
+                                <h3 class="profil-ttl title">vos Produits / Gammes<span>(En quelque mots) </span></h3>
+                                <textarea required="required" name="data[step-1][vos-produits]" class="txtarea"></textarea>
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END :COL-->
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-right">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">vos clients</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil">
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">Sexe :</span>Femme</span>
+                                            <input type="radio" name="data[step-1][vos-clients][sex]" value="femme"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END : ITM-->
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">&nbsp;</span>Homme</span>
+                                            <input type="radio" name="data[step-1][vos-clients][sex]" value="homme"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END : ITM-->
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">&nbsp;</span>Les deux</span>
+                                            <input type="radio" name="data[step-1][vos-clients][sex]" value="les_deux"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END : ITM-->
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-6 col-profil">
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">Âge :</span>15/25ans</span>
+                                            <input type="radio" name="data[step-1][vos-clients][age]" value="15/25ans"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END : ITM-->
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">&nbsp;</span>25/35ans</span>
+                                            <input type="radio" name="data[step-1][vos-clients][age]" value="25/35ans"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END : ITM-->
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">&nbsp;</span>35/45ans</span>
+                                            <input type="radio" name="data[step-1][vos-clients][age]" value="35/45ans"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END :ITM-->
+                                        <div class="blk-profil"><span class="txt"> <span class="empty">&nbsp;</span>+ de 45ans</span>
+                                            <input type="radio" name="data[step-1][vos-clients][age]" value="de_45ans"
+                                                   class="ipt-checkbox">
+                                        </div>
+                                        <!-- END :ITM-->
+                                    </div>
+                                    <!-- END :COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">Zone géographique</h3>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-6 col-profil"><span class="txt">Régional</span>
+                                        <input type="radio" name="data[step-1][zone]" value="regional" class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-4 col-sm-4 col-xs-6 col-profil"><span class="txt">National</span>
+                                        <input type="radio" name="data[step-1][zone]" value="national" class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                    <div class="col-md-4 col-sm-4 col-xs-6 col-profil"><span
+                                            class="txt">International</span>
+                                        <input type="radio" name="data[step-1][zone]" value="international" class="ipt-checkbox">
+                                    </div>
+                                    <!-- END :COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil mid">
+                                <h3 class="profil-ttl">vos concurrents<span>(3 liens url) </span></h3>
+                                <textarea name="data[step-1][vos-concurrents]" class="txtarea"></textarea>
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END :COL-->
+                    </div>
+                    <div class="profile-btn">
+                        <div class="row">
+                            <div class="col-xs-6 text-left">
+                                <!--<a class="previous-step btn"><span class="ico">&lt;</span><span class="txt">RETOUR</span></a>-->
+                            </div>
+                            <!-- END : COL-->
+                            <div class="col-xs-6 text-right"><a class="btn validate-step"><span
+                                    class="txt">ÉTAPE VALIDÉE</span></a></div>
+                            <!-- END : COL-->
+                        </div>
+                    </div>
+                    <!-- END :COL-->
+                </div>
+                <!-- END : PROFILE-->
+            </div>
+        </div>
+        <!-- END : BLK PROFILE-->
+        <div style="display: none;" data-step="2" id="blk-design" class="blk-content">
+            <div class="container">
+                <div class="blk-title">
+                    <h2 class="lrg-ttl">ETAPE II</h2>
+                    <h3 class="sml-ttl">WEBDESIGN</h3>
+                    <div class="desc">Choisissez le style graphique de votre site de la page d’acceuil, qui donne le
+                        «LA», à l’ensemble de vos pages.
+                    </div>
+                </div>
+                <!-- END : BLK TITLE-->
+                <div class="design-wrap">
+                    <div class="design-tab blk-pagination">
+                        <ul class="nav nav-tabs">
+                            <li class="active progress" data-page="0"><a href="#home" aria-controls="home" role="tab"
+                                                                         data-toggle="tab"> <span
+                                    class="cir"></span><span class="txt">HOME PAGE</span></a></li>
+                            <li class="progress" data-page="1"><a href="#propos" aria-controls="home" role="tab"
+                                                                  data-toggle="tab"> <span class="cir"></span><span
+                                    class="txt">À PROPOS</span></a></li>
+                            <li class="progress" data-page="2"><a href="#prestation" aria-controls="home" role="tab"
+                                                                  data-toggle="tab"> <span class="cir"></span><span
+                                    class="txt">PRESTATIONS</span></a></li>
+                            <li class="progress" data-page="3"><a href="#galerie" aria-controls="home" role="tab"
+                                                                  data-toggle="tab"> <span class="cir"></span><span
+                                    class="txt">GALERIE</span></a></li>
+                            <li class="progress" data-page="4"><a href="#blog" aria-controls="home" role="tab"
+                                                                  data-toggle="tab"> <span class="cir"></span><span
+                                    class="txt">BLOG</span></a></li>
+                            <li class="progress" data-page="5"><a href="#contact" aria-controls="home" role="tab"
+                                                                  data-toggle="tab"> <span class="cir"></span><span
+                                    class="txt">CONTACT</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- END: TAB-->
+                    <div class="design-content tab-content">
+                        <!-- 0) HOME -->
+                        <div id="home" role="tabpanel" class="tab-pane active" data-page="0">
+                            <ul class="design-list clearfix" data-home="-1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">OSHINE VII</h3>
+                                        <input value="0" type="radio" name="data[step-2][home]"
+                                               class="ipt-checkbox template-selection" data-option="0"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/home0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/home0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">OSHINE XXXV</h3>
+                                        <input value="1" type="radio" name="data[step-2][home]"
+                                               class="ipt-checkbox template-selection" data-option="1"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/home1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/home1.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">AOKI</h3>
+                                        <input value="2" type="radio" name="data[step-2][home]"
+                                               class="ipt-checkbox template-selection" data-option="2"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/home2.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/home2.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">VESO</h3>
+                                        <input value="3" type="radio" name="data[step-2][home]"
+                                               class="ipt-checkbox template-selection" data-option="3"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/home3.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/home3.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">MOMENTS</h3>
+                                        <input value="4" type="radio" name="data[step-2][home]"
+                                               class="ipt-checkbox template-selection" data-option="4"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/home4.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/home4.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+
+                            </ul>
+                        </div>
+
+                        <!-- 1) PROPOS -->
+                        <div style="display: none;" id="propos" role="tabpanel" class="tab-pane active" data-page="1">
+                            <ul style="display: none;" class="design-list clearfix" data-home="0">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS I</h3>
+                                        <input value="0/1/0" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="0"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="propos1" href="uploads/prods/templates/0/1/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/1/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS II</h3>
+                                        <input value="0/1/1" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="1"
+                                               data-home="-1">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/0/1/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/1/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS I</h3>
+                                        <input value="1/1/0" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/1/1/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/1/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS II</h3>
+                                        <input value="1/1/1" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/1/1/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/1/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="2">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS I</h3>
+                                        <input value="2/1/0" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/1/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/1/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS II</h3>
+                                        <input value="2/1/1" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/1/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/1/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="3">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS I</h3>
+                                        <input value="3/1/0" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/1/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/1/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS II</h3>
+                                        <input value="3/1/1" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/1/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/1/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="4">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS I</h3>
+                                        <input value="4/1/0" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/1/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/1/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS II</h3>
+                                        <input value="4/1/1" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/1/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/1/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">PROPOS III</h3>
+                                        <input value="4/1/2" type="radio" name="data[step-2][propos]"
+                                               class="ipt-checkbox template-selection" data-option="2">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/1/2.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/1/2.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                        </div>
+
+                        <!-- 2) PRESTATION -->
+                        <div style="display: none;" id="prestation" role="tabpanel" class="tab-pane active"
+                             data-page="2">
+                            <ul style="display: none;" class="design-list clearfix" data-home="0">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES</h3>
+                                        <input value="0/2/0" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/0/2/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/2/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES</h3>
+                                        <input value="1/2/0" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/1/2/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/2/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="2">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES</h3>
+                                        <input value="2/2/0" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/2/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/2/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="3">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES I</h3>
+                                        <input value="3/2/0" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/2/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/2/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES II</h3>
+                                        <input value="3/2/1" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/2/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/2/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="4">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES I</h3>
+                                        <input value="4/2/0" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/2/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/2/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">SERVICES II</h3>
+                                        <input value="3/2/1" type="radio" name="data[step-2][prestation]"
+                                               class="ipt-checkbox template-selection" data-option="1">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/2/1.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/2/1.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a>
+                                </li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                        </div>
+
+                        <!-- 3) GALERIE -->
+                        <div style="display: none;" id="galerie" role="tabpanel" class="tab-pane active"
+                             data-page="3">
+                            <ul style="display: none;" class="design-list clearfix" data-home="0">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">GALERIE</h3>
+                                        <input value="0/3/0" type="radio" name="data[step-2][galerie]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home0" href="uploads/prods/templates/0/3/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/3/0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">GALERIE</h3>
+                                        <input value="1/3/0" type="radio" name="data[step-2][galerie]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/1/3/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/3/0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="2">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">GALERIE</h3>
+                                        <input value="2/3/0" type="radio" name="data[step-2][galerie]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/3/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/3/0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="3">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">GALERIE</h3>
+                                        <input value="3/3/0" type="radio" name="data[step-2][galerie]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/3/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/3/0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="4">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">GALERIE</h3>
+                                        <input value="4/3/0" type="radio" name="data[step-2][galerie]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/3/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/3/0.jpg" alt=""></div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                        </div>
+
+                        <!-- 4) BLOG -->
+                        <div style="display: none;" id="blog" role="tabpanel" class="tab-pane active"
+                             data-page="4">
+                            <ul style="display: none;" class="design-list clearfix" data-home="0">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">BLOG</h3>
+                                        <input value="0/4/0" type="radio" name="data[step-2][blog]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home0" href="uploads/prods/templates/0/4/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/4/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">BLOG</h3>
+                                        <input value="1/4/0" type="radio" name="data[step-2][blog]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home0" href="uploads/prods/templates/1/4/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/4/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="2">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">BLOG</h3>
+                                        <input value="2/4/0" type="radio" name="data[step-2][blog]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/4/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/4/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="3">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">BLOG</h3>
+                                        <input value="3/4/0" type="radio" name="data[step-2][blog]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/4/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/4/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="4">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">BLOG</h3>
+                                        <input value="4/4/0" type="radio" name="data[step-2][blog]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/4/4/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/4/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                        </div>
+
+                        <!-- 5) CONTACT -->
+                        <div style="display: none;" id="contact" role="tabpanel" class="tab-pane active final"
+                             data-page="5">
+                            <ul style="display: none;" class="design-list clearfix" data-home="0">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">CONTACT</h3>
+                                        <input value="0/5/0" type="radio" name="data[step-2][contact]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home0" href="uploads/prods/templates/0/5/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/0/5/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+
+                            <ul style="display: none;" class="design-list clearfix" data-home="1">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">CONTACT</h3>
+                                        <input value="1/5/0" type="radio" name="data[step-2][contact]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home1" href="uploads/prods/templates/1/5/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/1/5/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="2">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">CONTACT</h3>
+                                        <input value="2/5/0" type="radio" name="data[step-2][contact]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home2" href="uploads/prods/templates/2/5/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/2/5/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="3">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">CONTACT</h3>
+                                        <input value="3/5/0" type="radio" name="data[step-2][contact]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home3" href="uploads/prods/templates/3/5/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/3/5/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                            <ul style="display: none;" class="design-list clearfix" data-home="4">
+                                <li class="design-item">
+                                    <div class="ttl-wrap clearfix">
+                                        <h3 class="ttl">CONTACT</h3>
+                                        <input value="4/5/0" type="radio" name="data[step-2][contact]"
+                                               class="ipt-checkbox template-selection" data-option="0">
+                                    </div>
+                                    <a data-lightbox="home4" href="uploads/prods/templates/4/5/0.jpg">
+                                        <!-- END : TTL-->
+                                        <div class="design-img"><img src="uploads/prods/templates/4/5/0.jpg" alt="">
+                                        </div>
+                                        <!-- END : IMG--></a></li>
+                                <!-- END : ITEM-->
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- END : CONTENT-->
+                </div>
+                <!-- END : WRAP-->
+                <div class="profile-btn">
+                    <div class="row">
+                        <div class="col-xs-6 text-left"><a class="btn previous-step"><span class="ico">&lt;</span><span
+                                class="txt">RETOUR</span></a></div>
+                        <!-- END : COL-->
+                        <div class="col-xs-6 text-right"><a class="btn validate-step" disabled="disabled"><span
+                                class="txt">ÉTAPE VALIDÉE</span></a>
+                        </div>
+                        <!-- END : COL-->
+                    </div>
+                </div>
+                <!-- END : BUTTON-->
+            </div>
+        </div>
+        <!-- END : BLK DESIGN-->
+        <div style="display: none;" data-step="3" id="blk-content" class="blk-content">
+            <div class="container">
+                <div class="blk-title">
+                    <h2 class="lrg-ttl">ETAPE III</h2>
+                    <h3 class="sml-ttl">CONTENUS</h3>
+                    <div class="desc">Qui mieux que vous pour nous donner toutes les choses à connaitre de vous ?!</div>
+                </div>
+                <!-- END : BLK TITLE-->
+                <div class="content-blk-wrap">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-left">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl ">vos COORDONNÉES</h3>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil block">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="txt title">Nom entreprise :</span>
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input required="required" name="data[step-3][vos-coordonnees][nom-entreprise]"
+                                               type="text" class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil block">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                            class="txt title">Email  <span>(pour formulaire de contact) :</span></span>
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input required="required" name="data[step-3][vos-coordonnees][email]"
+                                               type="text" class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil block">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                            class="txt title">Adresse :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input required="required" name="data[step-3][vos-coordonnees][address-1]"
+                                               type="text" class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child empty">&nbsp;</div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <input name="data[step-3][vos-coordonnees][address-2]" type="text"
+                                                       class="ipt-txt w100">
+                                            </div>
+                                            <!-- END : COL-->
+                                            <div class="col-xs-6">
+                                                <input name="data[step-3][vos-coordonnees][address-3]" type="text"
+                                                       class="ipt-txt w100">
+                                            </div>
+                                            <!-- END : COL-->
+                                        </div>
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil block">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="txt title">Téléphone Fixe :</span>
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input required="required" name="data[step-3][vos-coordonnees][telephone-fixe]"
+                                               type="text" class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="txt">Téléphone Portable :</span>
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-coordonnees][telephone-portable]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END: COL-->
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-right">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">vos RÉSEAUX SOCIAUX<span>(Liens url) </span></h3>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">Facebook :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][facebook]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">Twitter :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][twitter]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">LinkedIn :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][linkedin]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">Instagram :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][instagram]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">Pinterest :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][pinterest]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 col-child"><span
+                                            class="txt">YouTube :</span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-8 col-sm-8 col-xs-12 col-child">
+                                        <input name="data[step-3][vos-reseaux-sociaux][youtube]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END : COL-->
+                        <div class="col-xs-12 col-download">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">vos CONTENUS DU SITE</h3>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil-grp">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-left">
+                                        <div class="block blk-profil grp-download">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3 down-ttl">HOME PAGE :</div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-4 col-sm-4 col-xs-4 down-col"><span
+                                                        class="txt title">Texte (word / pdf)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][homepage][texte]"
+                                         class="fileToUpload"></span></span>
+                                                </div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-5 col-sm-5 col-xs-5 down-col text-right"><span
+                                                        class="txt">Images (.zip / HD)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input type="file" name="data[step-3][homepage][images]" class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                        <div class="block blk-profil grp-download">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3 down-ttl">À PROPOS :</div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-4 col-sm-4 col-xs-4 down-col"><span
+                                                        class="txt title">Texte (word / pdf)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][propos][texte]"
+                                         class="fileToUpload"></span></span></div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-5 col-sm-5 col-xs-5 down-col text-right"><span
+                                                        class="txt">Images (.zip / HD)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input type="file" name="data[step-3][propos][images]"
+                                         class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                        <div class="block blk-profil grp-download">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3 down-ttl">PRESTATIONS :</div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-4 col-sm-4 col-xs-4 down-col"><span
+                                                        class="txt title">Texte (word / pdf)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][prestation][texte]"
+                                         class="fileToUpload"></span></span>
+                                                </div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-5 col-sm-5 col-xs-5 down-col text-right"><span
+                                                        class="txt">Images (.zip / HD)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input type="file" name="data[step-3][prestation][images]"
+                                         class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-right">
+                                        <div class="block blk-profil grp-download">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3 down-ttl">GALERIE :</div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-4 col-sm-4 col-xs-4 down-col"><span
+                                                        class="txt title">Texte (word / pdf)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][galerie][texte]"
+                                         class="fileToUpload"></span></span></div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-5 col-sm-5 col-xs-5 down-col text-right"><span
+                                                        class="txt">Images (.zip / HD)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input type="file" name="data[step-3][galerie][images]"
+                                         class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                        <div class="block blk-profil grp-download">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3 down-ttl">CONTACT :</div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-4 col-sm-4 col-xs-4 down-col"><span
+                                                        class="txt title">Texte (word / pdf)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][contact][texte]"
+                                         class="fileToUpload"></span></span></div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-5 col-sm-5 col-xs-5 down-col text-right"><span
+                                                        class="txt">Images (.zip / HD)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input type="file" name="data[step-3][contact][images]"
+                                         class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                        <div class="block blk-profil grp-download grp-down-logo">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 down-ttl"><span class="title">LOGO / ICONES /
+                                                    ÉLÉMENTS GRAPHIQUES :</span>
+                                                </div>
+                                                <!-- END: COL-->
+                                                <div class="col-md-6 col-sm-6 col-xs-12 down-col text-right"><span
+                                                        class="txt">Dossier .Zip (.png / .ai)</span><span
+                                                        class="fileUpload"><span>UPLOAD</span><span
+                                                        style="height: 0px; width: 0px; overflow: hidden;">
+                                  <input required="required" type="file" name="data[step-3][graphiques][images]"
+                                         class="fileToUpload"></span></span><i
+                                                        class="ico-info"></i></div>
+                                                <!-- END: COL-->
+                                            </div>
+                                        </div>
+                                        <!-- END : BLK-->
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : GROUP-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END : WRAP-->
+                <div class="profile-btn">
+                    <div class="row">
+                        <div class="col-xs-6 text-left"><a class="btn previous-step"><span class="ico">&lt;</span><span
+                                class="txt">RETOUR</span></a></div>
+                        <!-- END : COL-->
+                        <div class="col-xs-6 text-right"><a class="btn validate-step"><span
+                                class="txt">ÉTAPE VALIDÉE</span></a></div>
+                        <!-- END : COL-->
+                    </div>
+                </div>
+                <!-- END : BUTTON-->
+            </div>
+        </div>
+        <!-- END : BLK CONTENT-->
+        <div style="display: none;" data-step="4" id="blk-tech" class="blk-content">
+            <div class="container">
+                <div class="blk-title">
+                    <h2 class="lrg-ttl">ETAPE IV</h2>
+                    <h3 class="sml-ttl">TECHNIQUE ET SEO</h3>
+                    <div class="desc">N’ayez crainte les termes peuvent faire peur comme ça mais rien d’insurmontable
+                        !!
+                    </div>
+                </div>
+                <!-- END : BLK TITLE-->
+                <div class="tech-wrap">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-left">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">VOTRE NOM DE DOMAINE </h3>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">Si vous possédez déjà un Nom De Domaine (NDD), merci de l’indiquer
+                                ici :
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <input name="data[step-4][nom-de-domaine][url]" type="text" class="ipt-txt">
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil sml"><span>Dans le cas inverse, l’achat du NDD n’est pas compris dans notre offre </span><span>mais nous pouvons vous guider dans cette démarche</span>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="txt">Control Panel (url) :</span>
+                                    </div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input name="data[step-4][control-panel][url]" type="text" class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="empty">&nbsp;</span><span
+                                            class="txt">&gt; Identifiant : </span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input name="data[step-4][control-panel][identifiant]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span class="empty">&nbsp;</span><span
+                                            class="txt">&gt; Mot de passe : </span></div>
+                                    <!-- END : COL-->
+                                    <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                        <input name="data[step-4][control-panel][mot-de-passe]" type="text"
+                                               class="ipt-txt w100">
+                                    </div>
+                                    <!-- END : COL-->
+                                </div>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil sml cl-green">L’hébergement de votre site ainsi que sa maintenance
+                                sont compris dans notre offre pour la première année.
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END: COL-->
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-right">
+                            <div class="blk-profil">
+                                <h3 class="profil-ttl">VOTRE RÉFÉRENCEMENT NATUREL</h3>
+                            </div>
+                            <!-- END : BLK-->
+                            <div class="blk-profil-grp">
+                                <div class="blk-profil">Si vous possedez un compte Google My Business:</div>
+                                <!-- END : BLK-->
+                                <div class="blk-profil">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                                class="empty">&nbsp;</span><span class="txt">&gt; Identifiant : </span>
+                                        </div>
+                                        <!-- END : COL-->
+                                        <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                            <input name="data[step-4][google-my-business][identifiant]" type="text"
+                                                   class="ipt-txt w100">
+                                        </div>
+                                        <!-- END : COL-->
+                                    </div>
+                                </div>
+                                <!-- END : BLK-->
+                                <div class="blk-profil">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                                class="empty">&nbsp;</span><span class="txt">&gt; Mot de passe : </span>
+                                        </div>
+                                        <!-- END : COL-->
+                                        <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                            <input name="data[step-4][google-my-business][mot-de-passe]" type="text"
+                                                   class="ipt-txt w100">
+                                        </div>
+                                        <!-- END : COL-->
+                                    </div>
+                                </div>
+                                <!-- END : BLK-->
+                            </div>
+                            <!-- END : GROUP-->
+                            <div class="blk-profil-grp">
+                                <div class="blk-profil">Si vous possedez un compte Google Analytics:</div>
+                                <!-- END : BLK-->
+                                <div class="blk-profil">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                                class="empty">&nbsp;</span><span class="txt">&gt; Identifiant : </span>
+                                        </div>
+                                        <!-- END : COL-->
+                                        <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                            <input name="data[step-4][google-analytics][identifiant]" type="text"
+                                                   class="ipt-txt w100">
+                                        </div>
+                                        <!-- END : COL-->
+                                    </div>
+                                </div>
+                                <!-- END : BLK-->
+                                <div class="blk-profil">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-xs-12 col-child"><span
+                                                class="empty">&nbsp;</span><span class="txt">&gt; Mot de passe : </span>
+                                        </div>
+                                        <!-- END : COL-->
+                                        <div class="col-md-7 col-sm-7 col-xs-12 col-child">
+                                            <input name="data[step-4][google-analytics][mot-de-passe]" type="text"
+                                                   class="ipt-txt w100">
+                                        </div>
+                                        <!-- END : COL-->
+                                    </div>
+                                </div>
+                                <!-- END : BLK-->
+                            </div>
+                            <!-- END : GROUP-->
+                            <div class="blk-profil sml cl-green"><span>Aucune donnée personnelle ou sensible ne sera utilisée ou modifiée </span><span>Cet accès est purement à titre informatif pour évaluer les performances de votre activité</span>
+                            </div>
+                            <!-- END : BLK-->
+                        </div>
+                        <!-- END: COL-->
+                    </div>
+                </div>
+                <div class="profile-btn">
+                    <div class="row">
+                        <div class="col-xs-6 text-left"><a class="btn previous-step"><span class="ico">&lt;</span><span
+                                class="txt">RETOUR</span></a></div>
+                        <!-- END : COL-->
+                        <div class="col-xs-6 text-right"><a class="btn validate-step"><span
+                                class="txt">ÉTAPE VALIDÉE</span></a></div>
+                        <!-- END : COL-->
+                    </div>
+                </div>
+                <!-- END : BUTTON-->
+            </div>
+        </div>
+        <!-- END : BLK TECH-->
+        <div style="display: none;" data-step="5" id="blk-validation" class="blk-content final">
+            <div class="container">
+                <div class="blk-title">
+                    <h2 class="lrg-ttl">ETAPE V</h2>
+                    <h3 class="sml-ttl">VALIDATION</h3>
+                    <div class="desc">Dernière étape avant le lancement officiel de votre aventure digitale !</div>
+                </div>
+                <!-- END : BLK TITLE-->
+                <div class="validation-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                </div>
+                <!-- END : CONTENT-->
+                <div class="validation-book">
+                    <h3 class="ttl">TOUT EST DIT Y''A PLUS QU''À !</h3>
+                    <button id="btn-submit" type="submit">LET 'S GO !</button>
+                </div>
+                <div style="display: none;" class="alert alert-success" role="alert">
+                    Votre demande a bien été envoyée !
+                </div>                <!-- END : BOOK-->
+            </div>
+        </div>
+        <!-- END : BLK VALIDATION-->
+    </form>
+</section>
+<!-- END : CONTENT-->
+<footer class="footer-wrap"><a href="#" title="Digital Strat"><img src="uploads/logo_footer.png"
+                                                                   alt="Digital Strat"></a></footer>
+<!-- END : FOOTER-->
+
+<script src="js/libs.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/start.js"></script>
+<script src="js/processor.js"></script>
+</body>
+</html>

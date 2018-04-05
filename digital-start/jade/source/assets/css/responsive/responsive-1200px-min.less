@@ -1,0 +1,224 @@
+/**
+ * Media 1200px+
+ *
+ * description: css rules for screen of desktop
+ */
+@media (min-width: 1500px) {
+    .container {
+        width: 1470px;
+    }
+}
+@media (max-width: 1440px) {
+    // CSS HEADER
+    .header-wrap {
+        .blk-banner {
+            .banner-logo {
+                width: 400px;
+                margin-bottom: 60px;
+            }
+            .banner-content {
+                .desc {
+                    padding: 20px;
+                    font-size: 24px;
+                    line-height: 34px;
+                    width: 620px;
+                }
+            }
+        }
+        .blk-banner {
+            .scroll-down {
+                width: 45px;
+                height: 68px;
+                bottom: 30px;
+                span {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+    .blk-profil {
+        font-size: 16px;
+    }
+    .blk-title {
+        .desc {
+            font-size: 16px;
+        }
+    }
+    .down-col {
+        span, .txt {
+            font-size: 13px;
+        }
+        .a_download,.fileUpload {
+            padding: 0 7px;
+            font-size: 13px;
+        }
+    }
+    .grp-download {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+        padding-left: 15px;
+        [class*="col"] {
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+    }
+    .blk-pagination {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        ul {
+            &::before {
+                top: 8px;
+            }
+        }
+        li {
+            &:first-child, &:last-child {
+                &::before {
+                    top: 8px;
+                }
+            }
+            span {
+                &.txt {
+                    font-size: 16px;
+                }
+                &.cir {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .design-wrap {
+        .design-tab {
+            &.blk-pagination {
+                li {
+                    span.txt {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .design-item {
+            .ttl-wrap {
+                .ttl {
+                    font-size: 16px;
+                }
+                .ipt-checkbox {
+                    top: -4px;
+                }
+            }
+        }
+    }
+    #blk-content {
+        .col-right {
+            .blk-profil {
+                &.grp-download {
+                    .down-ttl {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: auto;
+    }
+    .header-wrap {
+        .blk-banner {
+            .banner-logo {
+                margin-bottom: 60px;
+                width: 400px;
+            }
+            .banner-content {
+                // top: 90px;
+            }
+        }
+    }
+    #blk-content {
+        overflow: hidden;
+    }
+    .blk-title {
+        margin-bottom: 60px;
+        .sml-ttl {
+            font-size: 40px;
+            top: 30px;
+        }
+        .lrg-ttl {
+            font-size: 90px;
+        }
+        .desc {
+            font-size: 14px;
+        }
+    }
+    .blk-profil {
+        font-size: 14px;
+        .profil-ttl {
+            font-size: 20px;
+        }
+    }
+    .ico-info {
+        margin-left: 5px;
+    }
+    .validation-book {
+        .ttl {
+            font-size: 28px;
+        }
+        a {
+            font-size: 34px;
+        }
+    }
+    .profile-btn {
+        a {
+            span.txt {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .header-wrap {
+        .blk-banner {
+            .banner-logo {
+                margin-bottom: 40px;
+                width: 300px;
+            }
+        }
+        .header-logo {
+            a {
+                width: 200px;
+            }
+        }
+    }
+    .down-col {
+        span, .txt {
+            display: block;
+        }
+        .a_download,.fileUpload {
+            margin-left: 0;
+        }
+    }
+    .grp-download {
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        [class*="col"] {
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &.grp-down-logo {
+            .down-ttl {
+                width: 58.33333333%;
+            }
+            .down-col {
+                width: 41.66666667%;
+            }
+        }
+    }
+    .ico-info {
+        margin-left: 10px;
+    }
+}

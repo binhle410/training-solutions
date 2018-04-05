@@ -1,0 +1,26 @@
+[02-Apr-2018 16:18:09 UTC] PHP Warning:  move_uploaded_file(/home/filepnt/public_html/control.php/uploads/doc.pdf): failed to open stream: No such file or directory in /home/filepnt/public_html/control.php on line 33
+[02-Apr-2018 16:18:09 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpp7nrtq' to '/home/filepnt/public_html/control.php/uploads/doc.pdf' in /home/filepnt/public_html/control.php on line 33
+[02-Apr-2018 16:18:09 UTC] PHP Fatal error:  Uncaught Exception: FPDF error: Some data has already been output, can't send PDF file (output started at /home/filepnt/public_html/control.php:32) in /home/filepnt/public_html/pdf/fpdf.php:271
+Stack trace:
+#0 /home/filepnt/public_html/pdf/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/filepnt/public_html/pdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/filepnt/public_html/control.php(38): FPDF->Output()
+#3 /home/filepnt/public_html/index.php(2): include_once('/home/filepnt/p...')
+#4 {main}
+  thrown in /home/filepnt/public_html/pdf/fpdf.php on line 271
+[02-Apr-2018 16:18:53 UTC] PHP Fatal error:  Uncaught Exception: FPDF error: Some data has already been output, can't send PDF file (output started at /home/filepnt/public_html/control.php:32) in /home/filepnt/public_html/pdf/fpdf.php:271
+Stack trace:
+#0 /home/filepnt/public_html/pdf/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/filepnt/public_html/pdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/filepnt/public_html/control.php(38): FPDF->Output()
+#3 /home/filepnt/public_html/index.php(2): include_once('/home/filepnt/p...')
+#4 {main}
+  thrown in /home/filepnt/public_html/pdf/fpdf.php on line 271
+[02-Apr-2018 16:19:18 UTC] PHP Fatal error:  Uncaught Exception: FPDF error: Some data has already been output, can't send PDF file (output started at /home/filepnt/public_html/control.php:32) in /home/filepnt/public_html/pdf/fpdf.php:271
+Stack trace:
+#0 /home/filepnt/public_html/pdf/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /home/filepnt/public_html/pdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/filepnt/public_html/control.php(38): FPDF->Output()
+#3 /home/filepnt/public_html/index.php(2): include_once('/home/filepnt/p...')
+#4 {main}
+  thrown in /home/filepnt/public_html/pdf/fpdf.php on line 271

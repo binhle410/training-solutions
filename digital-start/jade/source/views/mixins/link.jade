@@ -1,0 +1,11 @@
+mixin link(icon, title, href)
+  - if (typeof(href) === 'undefined') href="#"
+  - if (!icon){
+      a(href="#{href}", title="#{title}", attributes)!=title
+  - }else{
+      a(href="#{href}", title="#{title}", attributes)
+        span(class="ico icon-#{icon}")
+        span!=title
+  - }
+
+  
